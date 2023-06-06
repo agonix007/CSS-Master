@@ -1,36 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Box Model</title>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display</title>
     <style>
-        *{
-            margin: 0;
-            padding: 0;
+        .box1{
+            width: 300px;
+            height: 150px;
+            background-color: green;
+            display: inline-block;
+            /* display: none; */
+            /* visibility: hidden; */
         }
-        .content{
-            width: 345px;
-            height: 200px;
-            background: lime;
-            margin: 14px;
-            /* margin: 14px 8px 2px 1px; */
-            padding: 12px;
-            /* padding-top: 50px; */
-            border: 2px solid black;
-            /* border-width: 5px;
-            border-style: dotted;
-            border-color: black; */
-            border-radius: 15px 50px 20px 30px;
+        .box2{
+            width: 300px;
+            height: 150px;
+            background-color: orange;
+            display: inline-block;
         }
     </style>
-  </head>
-  <body>
-    <div class="content">
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis eaque est
-      a ullam odio mollitia molestias repudiandae ex enim rem? Adipisci nemo,
-      praesentium repellat eveniet sunt odio mollitia illum optio?
-    </div>
-  </body>
+</head>
+<body>
+    <div class="box1">Lorem, ipsum dolor.</div>
+    <div class="box2">Lorem, ipsum dolor.</div>
+</body>
 </html>
