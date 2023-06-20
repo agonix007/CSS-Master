@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Transitions</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      .container {
+        background-color: aqua;
+        height: 100vh;
+      }
+      .box img {
+        width: 600px;
+        transition-property: width;
+        transition-duration: 1s;
+        transition-timing-function: ease-in;
+        transition-delay: 2s;
+        /* transition: width 1s ease-in 2s;
+        transition: 1s ease-in; */
+      }
+      .box img:hover {
+        width: 300px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="box">
+        <img
+          src="https://images.unsplash.com/photo-1560707303-4e980ce876ad?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1032&q=80"
+          alt="Loading..."
+        />
+      </div>
+    </div>
+  </body>
+</html>
